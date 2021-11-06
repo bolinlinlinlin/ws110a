@@ -1,0 +1,94 @@
+html, body {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0%;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    height: 450px;
+    /*border: 1px solid orange;*/
+}
+
+#desk {
+    width: 200%;
+    display: block;
+    height: 5px;
+    background-color: black;
+    margin: 140px 0 0 -50%;
+    transform: rotate(13.5deg);
+    border: none;
+    z-index: 1;
+}
+
+#container div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#cat {
+    z-index: 3;
+}
+
+#cat>#head {
+    background-image: url(./images/cat.png);
+}
+
+#cat>#mouth.off {
+    background-image: url(./images/mouthoff.png);
+}
+
+#cat>#mouth.on {
+    background-image: url(./images/mouthoff.png);
+}
+
+#cat>#paw-left.up {
+    background-image: url(./images/paw-left-up.png);
+}
+
+#cat>#paw-right.up {
+    background-image: url(./images/paw-right-up.png);
+}
+
+#cat>#paw-left.down {
+    background-image: url(./images/paw-left-up.png);
+    background-position-x: -800px;
+    background-position-y: 0px;
+}
+
+#cat>#paw-right.down {
+    background-image: url(./images/paw-right-up.png);
+    background-position-x: -800px;
+    background-position-y: 0px;
+}
+
+#instrument {
+    z-index: 2;
+}
+
+#instrument.bongo {
+    background-image: url(./images/bongo.png);
+}
+
+#instrument.keyboard {
+    background-image: url(./images/keyboard.png);
+}
+
+
+#instrument.marimba {
+    background-image: url(./images/marimba.png);
+}
+
+#instrument.tambourine {
+    background-image: url(./images/tambourine.png);
+}
